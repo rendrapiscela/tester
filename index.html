@@ -2,16 +2,22 @@
 <html>
 <meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
   
-  <link rel="stylesheet" href="https://htmlku.com/mangats/style.css"><script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <link rel="stylesheet" href="style.css"><script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
   
 <head>
 <title>Anika My Mood</title>
 <link rel="icon" type="image/x-icon" href="https://malasid.github.io/favicon.png">
+<style>
+  body::before {
+    display: none ! important;
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
 </head>
 <body style="background-color: white !important; padding : 10px 10px !important">
 	
    <!-- Ganti Audio di sini -->
-   <audio src="https://drive.google.com/file/d/1eOjs4QnckdremalUD-MDpg7gRoAo472f/view?usp=sharing" id="linkmp3" class="sembunyi"></audio>
+   <audio src="backsound.mp3#t=00:00:52" id="linkmp3" class="sembunyi"></audio>
       
    <div id="bodyblur" style="background-color: white !important;"><img src="" id="wallpaper" style="background-color: white !important;"/></div>
    <div id='Content' style="margin-top: -10% !important;">
@@ -25,7 +31,7 @@
           <!-- Tombol LOVE -->
       <svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.000000, 2.000000)'>
         <path d='M9.27542857,0.714285714 C14.0030476,0.714285714 17.836381,4.54666667 17.836381,9.2752381 C17.836381,14.0038095 14.0030476,17.8361905 9.27542857,17.8361905 C4.54685714,17.8361905 0.71447619,14.0038095 0.71447619,9.2752381 C0.71447619,4.54666667 4.54685714,0.714285714 9.27542857,0.714285714 Z'></path><path d='M17.8989524,16.487619 C18.678,16.487619 19.3094286,17.12 19.3094286,17.8980952 C19.3094286,18.6780952 18.678,19.3095238 17.8989524,19.3095238 C17.1199048,19.3095238 16.4875238,18.6780952 16.4875238,17.8980952 C16.4875238,17.12 17.1199048,16.487619 17.8989524,16.487619 Z'></path></g></svg>
-       <label style="font-size: 11pt;">My Mood.. Klik dulu dong</label>
+       <label style="font-size: 11pt; cursor: pointer;">My Mood.. Klik dulu dong</label>
       </div>
     </div>
 
@@ -44,16 +50,33 @@
          <img src="https://feeldreams.github.io/peach2.gif" id="fotostiker8"/>
      </div>
      
-     <div><blockquote id='bq' data-text='&#9829;'>
+     <div>
+      <blockquote id='bq' data-text='&#9829;' style="background-color: darkcyan !important;">
 
        <!-- Konten Isi -->
-       <p id="kalimat">Hai, <b class="merahmuda">Cantik ku..</b>! 😍</p>
-       <p id="kalimat1">Semangat ya untuk hari ini... 🫠🥰</p>
-       <p id="kalimat2">Aku yakin kamu pasti bisa melaluinya.. 😋</p>
-       <p id="kalimat3">Do'a ku selalu meny,<br>Jangan sampe sakit yaa 🫠</p>
-       <p id="kalimat4">Kalo kamu sakit nanti<br>Siapa yang nemenin akuu? 🥹</p>
-       <p id="kalimat5">Jangan lupain aku ya di sana,<br>Jangan berpindah ke lain hati </p>
-       <p id="kalimat6ngetik"><b class='garismerah'>Terakhir nih,</b> kamu semangat terus ngejalanin hari-harinya yaa, aku ga bakal ngelupain kamu.. 💐<br><br>Dan satu hal yang harus kamu tau, aku engga akan pernah mau kehilanganmu karena kamu adalah penyemangatku sekaligus kesayangankuu 🫠 >>><br><br><b class="merah putih">i love uuu moreee 🫣💗</b></p>
+       <p id="kalimat">Hai Anika, <b class="merahmuda">Cantik ku..</b>! 😍</p>
+       <p id="kalimat1">Semangat ya terutama untuk hari ini, esok dan seterusnya...🥰</p>
+       <p id="kalimat2">Aku sangat yakin kamu pasti bisa melaluinya dengan mudah..💗😋</p>
+       <p id="kalimat3">Pejamkan mata beberapa menit untuk berdo'a,<br>supaya bisa tetap fokus yaa 🫠</p>
+       <p id="kalimat4">Do'a ku...<br>Semoga setiap langkahmu selalu diberikan keberuntungan. 🥰</p>
+       <p id="kalimat5">Semoga ini menjadi penyemangat,<br>Senyum dulu dong cantiiikk 💐😋</p>
+       <p id="kalimat6ngetik">
+        <b class='garismerah'>Pas Sesuai liriknya nih,</b> <br/>Percaya, <br/>
+        Aku takkan ke mana-mana <br/>
+        Aku kan selalu ada <br/>
+        Temani hingga hari tua 💐
+        <br/>
+        Percaya, <br/>
+        Aku takkan ke mana-mana <br/>
+        Setia akan kujaga <br/>
+        Kita teman bahagia <br/><br/>
+        <b>Semoga hadirnya aku bisa membuat kamu menjadi bahagia setiap harinya.. Senyum mu, kebahagian ku.. 💗 Senyum lagi dong 😋</b> 
+        <br>
+        <b class="merah putih">Miss you moreee 🫣💗</b>
+        <br/>
+        <br/>
+        <a class="btn" style="background-color: darkblue; color: white; cursor: pointer; padding: 10px 10px; border-radius: 5px;" href="https://t.me/rendrapiscela?text=miss you too" target="_blank" id="By">Klik Dulu</a>
+      </p>
        
        <!-- Tombol Lanjut -->
        <p id="opsL">Klik untuk Lanjut</p>
@@ -61,10 +84,11 @@
         <div id="progress-bar" class="progress-bar"></div>
       </div>
        
-     </blockquote></div>
+     </blockquote>
+    </div>
      
    </div>
 
-<script src="https://htmlku.com/mangats/script.js"></script>
+<script src="myjs.js"></script>
 </body>
 </html>
